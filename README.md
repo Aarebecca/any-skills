@@ -37,3 +37,12 @@ Example:
 ```sh
 npm install any-skills --save-dev
 ```
+
+## Git ignore
+
+Add the tool-specific shared skill directories to your `.gitignore`:
+
+```
+.claude.skills
+.codex.skills
+```
