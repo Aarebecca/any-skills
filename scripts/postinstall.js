@@ -64,9 +64,7 @@ function ensureSymlink(linkPath, targetPath) {
   const resolvedLinkPath = path.resolve(linkPath);
   const expectedTarget = path.resolve(targetPath);
   if (resolvedLinkPath === expectedTarget) {
-    console.warn(
-      `[any-skills] ${linkPath} resolves to the target; skipping.`
-    );
+    console.warn(`[any-skills] ${linkPath} resolves to the target; skipping.`);
     return false;
   }
 
@@ -213,8 +211,8 @@ function buildLinkMappings({ config, configPath, exists, target }) {
       );
     }
     return {
-      mappings: defaultLinkTargets.map((target) => ({
-        linkPath: path.join(rootDir, target),
+      mappings: defaultLinkTargets.map((linkTarget) => ({
+        linkPath: resolveRootPath(linkTarget, rootDir),
         targetPath: target,
       })),
       error: false,

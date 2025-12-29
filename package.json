@@ -1,6 +1,6 @@
 {
   "name": "any-skills",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Share skills between Claude, Codex, and similar tools via a shared .skills directory.",
   "type": "commonjs",
   "scripts": {
