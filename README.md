@@ -35,5 +35,5 @@ Example:
 ## Usage
 
 ```sh
-npm install any-skills
+npm install any-skills --save-dev
 ```
